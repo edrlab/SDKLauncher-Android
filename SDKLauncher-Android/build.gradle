@@ -32,6 +32,10 @@ buildscript {
 //        def ndk_experimental = (rootProject.hasProperty("readium_ndk_experimental") && rootProject.readium_ndk_experimental)
 //        if (ndk_experimental) environment 'READIUM_EXPERIMENTAL', 'true'
 
+        rootProject.ext.set('readium_lcp_client_distribution_dir',
+                properties.getProperty('readium.lcp_client_distribution_dir', null))
+
+
         // Use stable gradle or experimental gradle
         if (ndkExperimental) {
             //https://bintray.com/android/android-tools/com.android.tools.build.gradle-experimental/view
