@@ -6,4 +6,4 @@
 	url = https://github.com/readium/readium-shared-js.git
 [submodule "readium-lcp-client"]
 	path = readium-lcp-client
-	url = https://github.com/readium/readium-lcp-client.git
+	url = https://github.com/edrlab/readium-lcp-client.git
